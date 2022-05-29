@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "226810343536",
+    "firebase_url": "https://gymfitness-c6c12-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "gymfitness-c6c12",
+    "storage_bucket": "gymfitness-c6c12.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:226810343536:android:bf7959f6957a4980a284b5",
+        "android_client_info": {
+          "package_name": "com.example.gymfit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "226810343536-9g5e73ma57vd8idvjgo94smh2pcod2qj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDkwX90-D9Qwd61u7qeFxdp2zj8IFxOT0M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "226810343536-9g5e73ma57vd8idvjgo94smh2pcod2qj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

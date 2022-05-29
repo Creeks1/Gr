@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="group_neck">
+
+        <item>Подъем головы с сопротивлением</item>
+        <item>Наклоны вперед с сопротивлением</item>
+        <item>Наклоны назад с сопротивлением</item>
+
+
+
+    </string-array>
+
+
+
+    <string-array name="group_shoulders">
+
+        <item>Разведение рук с гантелями в упоре</item>
+        <item>Жим штанги стоя</item>
+        <item>Жим гантелей сидя</item>
+
+
+    </string-array>
+
+    <string-array name="group_chest">
+
+        <item>Жим от груди в тренажере</item>
+        <item>Разведение рук с гантелями лежа на наклонной скамье</item>
+        <item>Отжимания на брусьях на грудь</item>
+
+
+    </string-array>
+
+    <string-array name="group_back">
+
+        <item>Тяга штанги в наклоне</item>
+        <item>Подтягивания на одной руке</item>
+        <item>Тяга гантели в наклоне</item>
+        <item>Тяга горизонтального блока к поясу</item>
+
+
+    </string-array>
+
+    <string-array name="group_hands">
+
+        <item>Отжимания с узкой постановкой ладоней</item>
+        <item>Концентрированные сгибания рук со штангой узким хватом сидя</item>
+        <item>Сгибание рук на верхних блоках</item>
+
+
+    </string-array>
+
+    <string-array name="group_press">
+
+        <item>Скручивания на наклонной скамье</item>
+        <item>Подъем ног в упоре</item>
+        <item>Скручивания на полу</item>
+        <item>Подтягивание ног к груди на горизонтальной скамье</item>
+
+
+
+    </string-array>
+
+    <string-array name="group_legs">
+
+        <item>Попеременный подъем на пятки и на носки со штангой</item>
+        <item>Подъем на носки в тренажере для жима ногами</item>
+        <item>Приседания со штангой с широкой постановкой стоп</item>
+
+
+    </string-array>
+</resources>

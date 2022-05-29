@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#595656"
+    tools:ignore="ExtraText">
+    tools:context=".MainActivity">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/cardview_dark_background"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme" />
+
+    <TextView
+        android:id="@+id/slog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:gravity="center"
+        android:text="Группы мышц"
+        android:textColor="@color/white"
+        android:textSize="40sp">
+
+    </TextView>
+
+
+    <Button
+        android:id="@+id/first"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/slog"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/input_design"
+        android:gravity="center"
+        android:text="Шея"
+        android:textColor="@color/white"
+        android:textSize="30dp">
+
+
+    </Button>
+
+
+    <Button
+        android:id="@+id/second"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/first"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/input_design"
+        android:gravity="center"
+        android:text="Плечи"
+        android:textColor="@color/white"
+        android:textSize="30dp">
+
+    </Button>
+
+
+
+    <Button
+        android:id="@+id/third"
+        android:layout_below="@+id/second"
+        android:layout_centerHorizontal="true"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:background="@drawable/input_design"
+        android:gravity="center"
+        android:text="Грудь"
+        android:textSize="30dp"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/white"
+
+        >
+    </Button>
+
+
+    <Button
+        android:id="@+id/fourth"
+        android:layout_below="@+id/third"
+        android:layout_centerHorizontal="true"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:background="@drawable/input_design"
+        android:gravity="center"
+        android:text="Спина"
+        android:textSize="30dp"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/white"
+
+        >
+    </Button>
+
+    <Button
+        android:id="@+id/fifth"
+        android:layout_below="@+id/fourth"
+        android:layout_centerHorizontal="true"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:background="@drawable/input_design"
+        android:gravity="center"
+        android:text="Руки"
+        android:textSize="30dp"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/white"
+
+        >
+    </Button>
+
+
+    <Button
+        android:id="@+id/sixth"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/fifth"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/input_design"
+        android:gravity="center"
+        android:text="Пресс"
+        android:textColor="@color/white"
+        android:textSize="30dp">
+
+    </Button>
+
+    <Button
+        android:id="@+id/seventh"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/sixth"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/input_design"
+        android:gravity="center"
+        android:text="Ноги"
+        android:textColor="@color/white"
+        android:textSize="30dp">
+
+    </Button>
+
+    <Button
+        android:id="@+id/Exit"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/input_design"
+        android:gravity="center"
+        android:text="Выход"
+        android:textColor="@color/white"
+        android:textSize="30dp">
+
+
+    </Button>
+
+
+
+</RelativeLayout>
