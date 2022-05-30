@@ -32,10 +32,10 @@ public class RegisterActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
 
-        Button regBtn = (Button) findViewById(R.id.reg_btn);
-        regNickInput = (EditText) findViewById(R.id.reg_nickname_input);
-        regNumberInput = (EditText) findViewById(R.id.reg_number_input);
-        regPasswordInput = (EditText) findViewById(R.id.reg_password_input);
+        Button regBtn = findViewById(R.id.reg_btn);
+        regNickInput = findViewById(R.id.reg_nickname_input);
+        regNumberInput = findViewById(R.id.reg_number_input);
+        regPasswordInput = findViewById(R.id.reg_password_input);
 
         loadingBar = new ProgressDialog(this);
 
@@ -82,6 +82,7 @@ public class RegisterActivity extends AppCompatActivity {
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 if (!(dataSnapshot.child("Users").child(reg_number).exists()))
                 {
+
                     HashMap<String, Object> userDataMap = new HashMap<>();
                     userDataMap.put("Email", reg_nickname);
                     userDataMap.put("Number", reg_number);
@@ -89,24 +90,37 @@ public class RegisterActivity extends AppCompatActivity {
 
 
 
-                    RootRef.child("Users").child(reg_number).updateChildren(userDataMap)
-                            .addOnCompleteListener(task -> {
-                                if (task.isSuccessful())
-                                {
-                                    loadingBar.dismiss();
-                                    Toast.makeText(RegisterActivity.this, "Регистрация прошла успешно", Toast.LENGTH_SHORT).show();
+
+                    if(reg_number.equals(reg_password)){
+
+                        RootRef.child("Users").child(reg_number).updateChildren(userDataMap)
+                                .addOnCompleteListener(task -> {
+
+                                    if (task.isSuccessful())
+                                    {
+                                        loadingBar.dismiss();
+                                        Toast.makeText(RegisterActivity.this, "Регистрация прошла успешно", Toast.LENGTH_SHORT).show();
 
 
-                                    Intent loginIntent = new Intent(RegisterActivity.this, LoginActivity.class);
-                                    startActivity(loginIntent);
-                                }
-                                else
-                                {
-                                    loadingBar.dismiss();
-                                    Toast.makeText(RegisterActivity.this, "Ошибка", Toast.LENGTH_SHORT).show();
-                                }
+                                        Intent loginIntent = new Intent(RegisterActivity.this, LoginActivity.class);
+                                        startActivity(loginIntent);
+                                    }
+                                    else
+                                    {
+                                        loadingBar.dismiss();
+                                        Toast.makeText(RegisterActivity.this, "Ошибка", Toast.LENGTH_SHORT).show();
+                                    }
 
-                            });
+                                });
+
+                    } else {
+                        loadingBar.dismiss();
+                        Toast.makeText(RegisterActivity.this, "Номера телефонов не совпадают", Toast.LENGTH_SHORT).show();
+                    }
+
+
+
+
                 }
                 else
                 {
